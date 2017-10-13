@@ -1,0 +1,19 @@
+{
+	"listContact": [{
+		"name": "Meyre Anne Carvalho",
+		"email": "meyreanne.42@gmail.com",
+		"state": "SC - Santa Catarina"
+	}, {
+		"name": "Claudio Alexssandro Lino",
+		"email": "codigosecafe@gmail.com",
+		"state": "PR - Paraná"
+	}, {
+		"name": "Leandro Felipe Lino",
+		"email": "le.lipe@gmail.com",
+		"state": "PR - Paraná"
+	}, {
+		"name": "Rafael Luiz",
+		"email": "rafa.luiz@gmail.com",
+		"state": "GO - Goiás"
+	}]
+}

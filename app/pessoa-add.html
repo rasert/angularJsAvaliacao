@@ -1,0 +1,23 @@
+<form class="panel panel-primary">
+    <div class="panel-heading">Adicionar</div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="nameInput">Nome</label>
+            <input #nameInput type="text" class="form-control" placeholder="Nome" ng-model="pessoa.name">
+        </div>
+        <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input #emailInput type="text" class="form-control" placeholder="Email" ng-model="pessoa.email">
+        </div>
+        <div class="form-group">
+            <label for="estadoSelect">Estado</label>
+            <select #estadoSelect class="form-control all_fields" ng-model="pessoa.state" ng-options="estado.name as estado.name for estado in listaEstados">
+                <option value="" disabled>Selecione um estado</option>
+            </select>
+        </div>
+        <div class="pull-right">
+            <button type="button" class="btn btn-primary" ng-click="adicionarPessoa()">Adicionar</button>
+            <button type="button" class="btn btn-default" ng-click="descarregarPainelAux()">Cancelar</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,21 @@
+{
+  "name": "angularjsavaliacao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "Jackson Diógenes Neves Mourão",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.11",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1 -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

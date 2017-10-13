@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="AppModule">
+   <head>
+      <title>AngularJs - Avaliação</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <script src="https://use.fontawesome.com/5007c33605.js"></script>
+      <link rel="stylesheet" href="/style.css">
+      <script src="/node_modules/jQuery/dist/jquery.min.js"></script>
+      <script src="/node_modules/angular/angular.min.js"></script>
+      <script src="/app/app.module.js"></script>
+      <script src="/app/app.controller.js"></script>
+   </head>
+   <body ng-controller="app.controller">
+        <header>
+            <nav class="navbar navbar-default fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">AngularJS - Avaliação</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="container-main" class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <section ng-include="'/app/pessoa-list.html'"></section>
+                </div>
+                <div class="col-md-4">
+                    <section ng-show="painelAtivo == 'add'" ng-include="'/app/pessoa-add.html'"></section>
+                    <section ng-show="painelAtivo == 'edit'" ng-include="'/app/pessoa-edit.html'"></section>
+                </div>
+            </div>
+        </main>
+
+        <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   </body>
+</html>

@@ -1,0 +1,39 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Cadastro de Pessoas</div>
+    <div class="panel-body">
+        <form class="form-group clearfix">
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
+                <input type="text" class="form-control" id="search-reg" placeholder="Quem você deseja encontrar?" ng-model="searchFilter">
+            </div>
+        </form>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th><a ng-click="ordenarLista('name')" href="#">Nome</a></th>
+                    <th><a ng-click="ordenarLista('email')" href="#">Email</a></th>
+                    <th><a ng-click="ordenarLista('state')" href="#">Estado</a></th>
+                    <th class="text-center" width="160"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="pessoa in listaPessoas | filter:{name: searchFilter} | orderBy:campoOrdenacao:orderDirection">
+                    <td>{{ pessoa.name | uppercase }}</td>
+                    <td>{{ pessoa.email | uppercase }}</td>
+                    <td>{{ pessoa.state | uppercase }}</td>
+                    <td class="text-center">
+                        <div class="btn-group" role="group" aria-label="Ações user">
+                            <button type="button" class="btn btn-info text-center" ng-click="carregarPainelEditar(pessoa)"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-secondary text-center" ng-click="excluirPessoa(pessoa)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</div>
+<button type="button" class="fixed-button rounded-circle align-middle" ng-click="carregarPainelAdicionar()">
+    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+</button>
+
+<section ng-include="'/app/confirmacao-modal.html'"></section>

@@ -1,0 +1,17 @@
+<div id="confirmacaoModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Excluir</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                Tem certeza que deseja excluir "{{ nomePessoaExcluir }}"? 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" ng-click="confirmarExclusao(pessoaExcluirHash)">Sim</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

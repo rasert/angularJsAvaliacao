@@ -1,0 +1,85 @@
+{
+   "listStates":[
+      {
+         "name":"AC - Acre"
+      },
+      {
+         "name":"AL - Alagoas"
+      },
+      {
+         "name":"AP - Amapá"
+      },
+      {
+         "name":"AM - Amazonas"
+      },
+      {
+         "name":"BA - Bahia"
+      },
+      {
+         "name":"CE - Ceará"
+      },
+      {
+         "name":"DF - Distrito Federal"
+      },
+      {
+         "name":"ES - Espírito Santo"
+      },
+      {
+         "name":"GO - Goiás"
+      },
+      {
+         "name":"MA - Maranhão"
+      },
+      {
+         "name":"MT - Mato Grosso"
+      },
+      {
+         "name":"MS - Mato Grosso do Sul"
+      },
+      {
+         "name":"MG - Minas Gerais"
+      },
+      {
+         "name":"PA - Pará"
+      },
+      {
+         "name":"PB - Paraíba"
+      },
+      {
+         "name":"PR - Paraná"
+      },
+      {
+         "name":"PE - Pernambuco"
+      },
+      {
+         "name":"PI - Piauí"
+      },
+      {
+         "name":"RJ - Rio de Janeiro"
+      },
+      {
+         "name":"RN - Rio Grande do Norte"
+      },
+      {
+         "name":"RS - Rio Grande do Sul"
+      },
+      {
+         "name":"RO - Rondônia"
+      },
+      {
+         "name":"RR - Rorâima"
+      },
+      {
+         "name":"SC - Santa Catarina"
+      },
+      {
+         "name":"SP - São Paulo"
+      },
+      {
+         "name":"SE - Sergipe"
+      },
+      {
+         "name":"TO - Tocantins"
+      }
+   ]
+}
